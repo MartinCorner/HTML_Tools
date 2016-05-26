@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head runat="server">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style type="text/css">
+        #slipper-panel{
+            width: 500px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        
+        #slipper{
+            width: 80px;
+            height: 80px;
+            background-color: #ff0000;
+            transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+        }
+        
+    </style>
+    
+    <script>
+        window.onload = function(){
+            var pointX = 0,
+                targetX = 0,
+                isMousedown = false,
+                slipper = document.querySelectorAll('#slipper')[0];
+            
+            slipper.addEventListener('mousedown', function(event){
+                pointX = event.pageX;
+                isMousedown = true;
+            });
+            
+            slipper.addEventListener('mousemove', function(event){
+                if(isMousedown){
+                    targetX = event.pageX - pointX;
+                    if(targetX > 0 && targetX <= 500 - 80){//限制滑动区间，滑动槽宽度
+                        console.log(targetX);
+                        slipper.style.cssText = "transform: translateX("+targetX+"px); -webkit-transform: translateX("+targetX+"px);";
+                    }
+                    
+                    if(targetX > 210 && targetX <= 290){//验证区间
+                        console.log('拖动成功');
+                    }
+                }
+            });
+            
+            slipper.addEventListener('mouseup', function(event){
+                isMousedown = false;
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="slipper-panel">
+        <div id="slipper"></div>
+    </div>
+</body>
+</html>

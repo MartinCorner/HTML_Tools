@@ -1,0 +1,73 @@
+#services_services .benefits{
+	margin: 190px 0 0 80px;
+}
+#services_services .benefits dd{
+	font-size: 24px;
+}
+#services_services .benefits dd dl dd{
+	background-image: url('../../content/img/ul-c.png');
+	background-repeat: no-repeat;
+	background-position: 0 9px;
+	background-size: 6px;
+	font-size: 22px;
+	margin: 10px 0 0 40px;
+}
+#services_services table{
+	position: relative;
+	margin: 72px auto;
+	border: 1px solid #4f2683;
+	font: 18px 'FrutigerLTStd57Condensed';
+	width: 655px;
+	border-collapse: separate;
+	-webkit-border-radius: 0 17px 0 17px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 6px 6px 0px;
+}
+#services_services caption{
+	color: #4f2d7f;
+	font-size: 17px;
+	text-align: left;
+	height: 27px;
+}
+#services_services thead th{
+	font-size: 17px;
+	text-align: center;
+	color: #4f2d7f;
+	font-family: 'FrutigerLTStd77BlackCondensed';
+	background: #c7c8ca;
+	border-top-right-radius: 17px;
+}
+#services_services th, #services_services td{
+	height: 40px;
+	vertical-align: middle;
+	background: #ffffff;
+}
+#services_services th{
+	text-align: left;
+	padding: 0 0 0 20px;
+}
+#services_services td{
+	width: 140px;
+	text-align: center;
+	font-weight: bold;
+}
+#services_services tbody tr td,
+#services_services tbody tr th{
+	border-bottom: 1px solid #4f2d7f;
+}
+#services_services tbody tr:first-of-type td,
+#services_services tbody tr:first-of-type th{
+	border-bottom: 2px solid #4f2d7f;
+}
+#services_services tbody tr:last-of-type td,
+#services_services tbody tr:last-of-type th{
+	border-bottom: none;
+}
+#services_services tr td:first-of-type{
+	color: #8A8C8E;
+}
+#services_services tr td:nth-of-type(2){
+	color: #ec008c;
+}
+#services_services tbody tr:last-of-type th{
+	border-bottom-left-radius: 17px;
+}

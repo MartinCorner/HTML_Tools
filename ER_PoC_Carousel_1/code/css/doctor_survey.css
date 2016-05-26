@@ -1,0 +1,146 @@
+
+#doctor_survey {
+
+	background-position: left bottom;
+}
+
+
+/*: Form
+----------------------------------------------------------*/
+#doctor_survey form {
+	width: 900px;
+	padding: 0 70px;
+	margin: 30px auto;
+	background-color: transparent;
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-size: 19px;
+	color: #808080;
+}
+
+#doctor_survey fieldset {
+	border: none;
+	padding: 0;
+}
+
+#doctor_survey table {
+	width: 100%;
+	border: 2px solid #808080;
+	border-collapse:separate;
+	float: left;
+	border-spacing:0px 0px;
+	border-top-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    background-color: white;
+	overflow:hidden;
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+#doctor_survey tr {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #d0c7db;
+}
+
+#doctor_survey tr th, #doctor_survey tr td
+{    
+	font-weight:bold;
+    vertical-align:middle;
+	border-bottom: 1px solid #d0c7db;
+}
+#doctor_survey tr td{height: 70px;}
+
+#doctor_survey tr.rigid td{ background-color:#ebebeb;}
+#doctor_survey tr.thin td {	background-color:#ebebeb;}
+
+#doctor_survey tr th{
+    height:80px;
+	width:104px;
+	line-height:24px;
+    background-color:#808080;
+	color:#fff;
+}
+
+#doctor_survey tr th:nth-child(1),#doctor_survey tr td:nth-child(1)
+{
+    width: 370px;
+	border-left:none;
+	background-color: #808080; //transparent;
+}
+#doctor_survey tr:nth-child(5) td
+{
+	border-bottom:none;
+}
+#doctor_survey tr th:nth-child(6),#doctor_survey tr td:nth-child(6)
+{
+	border-right:none;
+}
+#doctor_survey tr td:nth-child(1) span
+{
+	width: 350px;
+	font-size:17px;
+	line-height:24px;
+	padding:5px 10px;
+	display:block;
+	color:#fff;
+}
+
+/*: Form elements: Checkboxes
+----------------------------------------------------------*/
+#doctor_survey input[type="radio"] {
+	width: 100%;
+	height: 100%;
+	/*margin-right: 13px;*/
+	border: none;
+	/*float: left;*/
+    margin:0;
+	position:relative;
+	background-color: transparent;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 0px 0px 0px 0px;
+
+	-webkit-appearance: none;	/* Remove Safari default */
+}
+#doctor_survey input[type="radio"]:checked{
+    margin:0;
+}
+#doctor_survey tr td:nth-child(2) input[type="radio"]{
+	background-image: url(../../content/img/doctor_survey/face_gray_happy_2.png);
+}
+
+#doctor_survey tr td:nth-child(2) input[type="radio"]:checked{
+    background-image: url(../../content/img/doctor_survey/face_happy_2.png);
+}
+
+#doctor_survey tr td:nth-child(3) input[type="radio"]{
+	background-image: url(../../content/img/doctor_survey/face_gray_happy_1.png);
+}
+
+#doctor_survey tr td:nth-child(3) input[type="radio"]:checked{
+    background-image: url(../../content/img/doctor_survey/face_happy_1.png);
+}
+
+#doctor_survey tr td:nth-child(4) input[type="radio"]{
+	background-image: url(../../content/img/doctor_survey/face_gray_normal_1.png);
+}
+
+#doctor_survey tr td:nth-child(4) input[type="radio"]:checked{
+    background-image: url(../../content/img/doctor_survey/face_normal_1.png);
+}
+
+#doctor_survey tr td:nth-child(5) input[type="radio"]{
+	background-image: url(../../content/img/doctor_survey/face_gray_sad_1.png);
+}
+
+#doctor_survey tr td:nth-child(5) input[type="radio"]:checked{
+    background-image: url(../../content/img/doctor_survey/face_sad_1.png);
+}
+
+#doctor_survey tr td:nth-child(6) input[type="radio"]{
+	background-image: url(../../content/img/doctor_survey/face_gray_sad_2.png);
+}
+
+#doctor_survey tr td:nth-child(6) input[type="radio"]:checked{
+    background-image: url(../../content/img/doctor_survey/face_sad_2.png);
+}

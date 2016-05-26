@@ -1,0 +1,74 @@
+
+#predefined > div.sectionSelection
+{
+    position: absolute;
+    width: 100%;
+	height: 100%;
+    -webkit-perspective: 2000px;
+    -webkit-transform-style: preserve-3d;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    
+}
+
+#predefined > div.stage
+{
+	left: 220px;
+    top: 550px;
+    width:100%;
+    height: 100%;
+    background-image: url('../../content/img/predefined/stage.png');
+    background-size: 610px auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    pointer-events:none;
+}
+
+#predefined > div.obstruct
+{
+    position:absolute;
+    left: 305px;
+    top: 356px;
+    width: 450px;
+    height: 111px;
+    /*background-image: url('../../content/img/predefined/obstruct.png');*/
+    background-size: 450px 111px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateZ(-100px) scale(1.2);
+    pointer-events:none;
+
+}
+
+#predefined > div.sectionSelection img
+{
+    position: absolute;
+    left: 370px;
+    top: 175px;
+    /*width: 299px;
+    height: auto;*/
+    -webkit-backface-visibility: hidden;
+}
+
+#predefined > div.story_name
+{
+    width:900px;
+    top:130px;
+    font-size:22px;
+    position: relative;
+    font-family: 'MSYHBD';
+    color:rgb(200,0,6);
+    text-align: center;
+    margin: 0 40px 0 auto;
+}
+#predefined > div.nav_name
+{
+    width:900px;
+    top:270px;
+    font-size:22px;
+    position: relative;
+    font-family: 'MSYHBD';
+    color:gray;
+    text-align: center;
+    margin: 0 40px 10px auto;
+}

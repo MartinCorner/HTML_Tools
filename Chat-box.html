@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="&lt;a href=" http:="" www.w3.org="">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<style>
+		#box_bottomLeft {
+			left: 129px;
+			top: 99px;
+		}
+		#box_leftBottom {
+			left: 129px;
+			top: 239px;
+		}
+		
+		#box_leftTop {
+			top: 99px;
+			left: 500px;
+		}
+		
+		#box_rightBottom {
+			top: 239px;
+			left: 500px;
+		}
+		
+		.popDiv {
+			border: 1px solid #78cdd3;
+			background: #fff;
+			padding: 20px 40px;
+			font-size: 24px;
+			color: #626366;
+			position: absolute;
+			z-index: 5;
+			min-height: 30px;
+			min-width: 150px;
+			text-align: center;
+			/* opacity: 0; */
+		}
+		
+		.bottomLeft:before {
+			border-top: 32px solid #78cdd3;
+			border-right: 40px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: -32px;
+			position: absolute;
+			left: -1px;
+		}
+		
+		.bottomLeft:after {
+			border-top: 30px solid #fff;
+			border-right: 38px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: -30px;
+			position: absolute;
+			left: -0px;
+		}
+		.leftBottom:before {
+			border-bottom: 32px solid #78cdd3;
+			border-left: 40px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: -1px;
+			position: absolute;
+			left: -41px;
+		}
+		
+		.leftBottom:after {
+			border-bottom: 30px solid #fff;
+			border-left: 38px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: 0px;
+			position: absolute;
+			left: -38px;
+		}
+		
+		.leftTop:before {
+			border-top: 32px solid #78cdd3;
+			border-left: 40px solid transparent;
+			content: "";
+			display: inline-block;
+			top: -1px;
+			position: absolute;
+			left: -41px;
+		}
+		
+		.leftTop:after {
+			border-top: 30px solid #fff;
+			border-left: 38px solid transparent;
+			content: "";
+			display: inline-block;
+			top: 0px;
+			position: absolute;
+			left: -38px;
+		}
+		
+		.rightBottom:before {
+			border-bottom: 32px solid #78cdd3;
+			border-right: 40px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: -1px;
+			position: absolute;
+			left: 230px;
+		}
+		
+		.rightBottom:after {
+			border-bottom: 30px solid #fff;
+			border-right: 37px solid transparent;
+			content: "";
+			display: inline-block;
+			bottom: 0px;
+			position: absolute;
+			left: 230px;
+		}
+		
+	</style>
+	<script>alert(window.navigator.userAgent);</script>
+</head>
+
+<body>
+	<div id="box_bottomLeft" class="popDiv" style="opacity: 1;">
+		<div class="bottomLeft"></div>
+	</div>
+	
+	<div id="box_leftBottom" class="popDiv" style="opacity: 1;">
+		<div class="leftBottom"></div>
+	</div>
+	
+	<div id="box_leftTop" class="popDiv" style="opacity: 1;">
+		<div class="leftTop"></div>
+	</div>
+	
+	<div id="box_rightBottom" class="popDiv" style="opacity: 1;">
+		<div class="rightBottom"></div>
+	</div>
+
+</body>
+
+</html>

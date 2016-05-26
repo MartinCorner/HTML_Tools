@@ -1,0 +1,40 @@
+.indicators{
+/*	display: -webkit-box;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 12px;
+	z-index: 7;
+	pointer-events: none;
+	-webkit-transform: translate3d(0, -50%, 0);
+	-webkit-user-select: none;
+	-webkit-box-pack: center;*/
+	display: -webkit-box;
+	position: absolute;
+	top: 95.8%;
+	left: 46%;
+	width: 74px;
+	z-index: 7;
+	pointer-events: none;
+	-webkit-transform: translate3d(0, -50%, 0);
+	-webkit-user-select: none;
+	-webkit-box-pack: center;
+	color: #808080;
+	font-size:15px;
+}
+.indicators.hidden{
+	display: none;
+}
+.indicators input{
+	margin: 2px 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background: -webkit-linear-gradient(#d5d5d2, #e8e7e4);
+	pointer-events: none;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.indicators input:checked{
+	background: -webkit-linear-gradient(#7cb800, #74ac00);
+	-webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+}

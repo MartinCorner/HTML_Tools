@@ -1,0 +1,65 @@
+/**
+
+1. To add more pre-made presentations make additional collections in the following way in the presentations.json file.
+
+"da2":{
+	"name":"DA 2",
+	"id":"da2",
+	"type":"collection",
+	"custom":"da",
+	"content":["references", "predefined", "home", "dual_pathway", "doctor_survey"]
+}
+
+To identify it as a da or scenario pre-made presentation I've added the custom value which should be set to either "da" or "scenario".
+Also make sure that value: id has the same value as the key for the actual collection. in this case "da2" and "da2".
+
+app.slide.da_popup.js
+app.slide.scenario_popup.js
+
+The two javascript files above will check through all the da and scenario collections that has been added to the json file and it will add them to a list in those respective popups.
+By clicking on any of the listed buttons the specified collection will be loaded.
+
+To have a new menu made work for each collection loaded they need to be added as a possible parameter to the menu module.
+It's listed in setup.js:
+
+app.menu.setCollectionList(["play","da1","da2","scenario1","scenario2"]);
+
+So the full presentation collection is play but the others are already pre-defined da's and scenario's.
+
+Also when clicking on my presentations it will open up the "builder chapter" that can be found in the footer of the template.
+Here you can access presentations actually built within a run of the presentation saved in localstorage.
+
+
+
+2. Indicators
+
+We've added an indication model to show where you are within a flow of a slideshow if there is more than one slide.
+only thing needed to make them show up is to have more than one slide added and add the class indicated to every new slide you create.
+
+example:
+<article id="dual_pathway" class="slide indicated" data-ag-name="Slide 4">
+
+
+
+3. Builder and defaul builder chapters:
+
+There are some additional collections listed in the json-file that can be used to define slideshows that should always be part of any custom-built presentations.
+There is also one that defines which slideshows should be added as a choice when building a custom presentation.
+
+},
+"buildchapters":{
+	"name":"ACS presentation",
+	"type":"collection",
+	"content":["cv_risk", "dual_pathway", "doctor_survey"]
+},
+"defaultbuildchapters":{
+	"name":"ACS presentation",
+	"type":"collection",
+	"content":["references", "predefined", "home"]
+},
+
+buildchapters: These are the ones added to choose from when bulding something from within the presentation.
+defaultbuildchapters: Are the slideshows listed that will always be added to any presentation that you build yourself within a presentation.
+
+
+**/

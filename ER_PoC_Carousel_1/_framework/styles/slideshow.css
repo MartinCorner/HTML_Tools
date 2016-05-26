@@ -1,0 +1,248 @@
+body, #presentation, #slideshows {
+	font-family: helvetica;
+	overflow: hidden;
+}
+
+#slideshows, #presentation {
+	/*This code fix transition presentation after tap on iPad*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+}
+
+.collection, .slideshow, .inline-slideshow {
+	/* display:none; */
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	overflow: hidden;
+	-webkit-transition-duration: 600ms;
+	-webkit-transition-delay: 1ms;
+	-webkit-transition-property: -webkit-transform;
+}
+
+.collection .slideshow {
+	display: block;
+	-webkit-box-flex: 0;
+	width: 1024px !important;
+}
+
+.slideWrap{
+	width: 1024px;
+	height: 768px;
+}
+
+.slideWrap .slide {
+	display:none;
+}
+#startContainer .slide {
+	display: block;
+}
+
+.slideWrap .slide.active {
+	display: block;
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.slide {
+	-webkit-box-flex: 0;
+	width: 1024px;
+	height: 768px;
+	-webkit-box-sizing: border-box;
+	position: relative;
+}
+
+#mainmenu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 1024px;
+	z-index: 1;
+}
+
+/*#mainmenu.animate {
+	-webkit-transform: translate3d(0,0,0) !important;
+	-webkit-transition: 1s !important;
+}*/
+
+#mainfooter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1024px;
+	z-index: 999;
+	height: 0;
+	overflow: visible;
+}
+
+#portrait{
+	display: none;
+}
+
+@media only screen and (orientation:portrait){
+	//* portrait styles here *//
+	.collection .slideshow {
+		width:768px !important;
+	}
+	.slide {
+		width:768px;
+		height:1024px;
+	}
+	#portrait{
+		display: block;
+		background-color:white;
+		color:black;
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: center;
+		position: absolute;
+		top:0;
+		left:0;
+		height: 100%;
+		width: 100%;
+		z-index:1000;
+	}
+	#mainmenu, #mainfooter {
+		width:768px;
+	}
+}
+#debug {
+	background-color: #3EB6DC;
+	display: none;
+	width: 60%;
+	height: 60px;
+	position: absolute;
+	top: 40px;
+	/*  padding: 2%;*/
+	left: 8%;
+	border-radius: 0 0 14px 14px;
+	border: 1px solid #eee;
+}
+
+#debug.showing {
+	display: block;
+	z-index: 999;
+}
+
+#debug header {
+	background: #27343A;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27343A), color-stop(100%, #1E292E));
+	background: -webkit-linear-gradient(top, #27343A 0%, #1E292E 100%);
+	-webkit-box-shadow: inset 0px 17px 0px 0px rgba(255, 255, 255, .05), 0px 1px 1px 0px rgba(0, 0, 0, .6);
+	color: #fff;
+	font-size: 0.9em;
+	/*  margin-bottom:25px;*/
+	padding: 10px 20px;
+}
+
+.state-bar {
+	background-color: #555;
+	color: #fff;
+	font-size: 0.8em;
+	word-spacing: 3px;
+	margin-bottom: 25px;
+	padding: 5px 20px;
+}
+
+.state-bar span {
+	margin-right: 10px;
+}
+
+.d-col {
+	background-color: #fff;
+	float: left;
+	margin-left: 2%;
+	padding: 1%;
+	width: 45%;
+}
+
+.d-col.last {
+	margin-left: 20px;
+}
+
+#popup-wrapper, .popup-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(125, 125, 125, 0.5);
+	z-index: 10001;
+	display: none;
+}
+
+#popup-wrapper.show, .popup-wrapper.displaying {
+	display: block;
+}
+
+#popup-wrapper .popup {
+	display: none;
+	background: #ffffff;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border: 1px solid #AD9CC1;
+	-webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+
+#popup-wrapper .popup.show {
+	display: block;
+}
+
+#popup-wrapper .popup.footnote-popup{
+  background: url('../../modules/footnote-popup/cls.png') 97% 90% no-repeat, #ffffff;
+}
+
+.slide .footnote {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 0 20px 20px;
+}
+
+.slide .footnote p {
+	font-family: Frutiger55RomanRegular;
+	text-align: left;
+	font-size: 11px;
+	color: #000000;
+	margin: 0;
+}
+
+article.morebelow:before {
+	content: url(../../content/img/app/arrows/down.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+	height: 77px;
+	z-index: 10;
+}
+
+article.moreabove:after {
+	content: url(../../content/img/app/arrows/up.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+	height: 77px;
+	z-index: 10;
+}
+
+/*: Indicator-arrows: Content both below and above
+-------------------------------------------------*/
+article.morebelow.moreabove:before {
+	content: url(../../content/img/app/arrows/down.png);
+	position: absolute;
+	left: 483px;
+	bottom: -50px;
+}
+
+article.morebelow.moreabove:after {
+	content: url(../../content/img/app/arrows/up.png);
+	position: absolute;
+	left: 509px;
+	bottom: -50px;
+}

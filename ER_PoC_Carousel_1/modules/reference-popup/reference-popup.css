@@ -1,0 +1,78 @@
+/**
+ * @author: Sergey Tkalych sergey.tkalych@qa-power.com
+ */
+
+.slide .reference-popup-list {display: none;}
+
+.reference-popup {
+	margin: 165px auto 0 auto; 
+	width: 820px; 
+	height: 480px; 
+}
+#popup-wrapper .reference-popup {
+	
+}
+
+.reference-popup h1 {margin: 0 0 20px 0;padding-top: 40px;color:#009c7c;}
+.reference-popup .close-button {position: absolute; top: 20px; right: 20px; background: url("../../content/img/close.png") no-repeat; background-size:contain; width: 20px; height: 20px;}
+.reference-popup ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0 50px 20px 50px;
+}
+.reference-popup ul li {
+	display:inline-block;
+	margin:12px 0;
+	width:720px;
+}
+.reference-popup ul li a {
+	padding-left: 65px;
+	min-height: 39px;
+	display: -webkit-box;
+	/*-webkit-box-align: center;*/
+    margin-top: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+    line-height: 19px;
+}
+.reference-popup .reference-list-wrapper{
+	position: relative;
+	height: 320px;
+	width: 100%;
+}
+.reference-popup ul li a[data-pdf] {
+	/*
+	background: url(../../content/img/references_references/pdf-icon.png) no-repeat left -5px;
+	*/
+	background-size: 45px;
+}
+.reference-popup ul li a span {}
+
+#reference-popup-button {position: absolute; bottom: 0; left: 0; width: 50px; height: 50px; z-index: 100; display: block;z-index: 10000;}
+#reference-popup-button.disable {display: none;}
+#popup-wrapper, .popup-wrapper{
+	z-index: 1000;
+}
+.list-wraper {
+	max-height: 550px;
+	overflow: hidden;
+	position: relative;
+}
+
+.reference-popup .scroll-indicator{
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 20px;
+	left: 392px;
+	background: url('../../content/img/app/arrows/arrows_sprite.png') 7px 0 no-repeat;
+	height: 10px;
+	width: 35px;
+	background-size: 90px 10px;
+}
+.reference-popup .scroll-indicator.scrolled{
+	background-position: -27px 0;
+}
+.reference-popup .scroll-indicator.end-scrolled{
+	background-position: -63px 0;
+}

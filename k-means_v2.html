@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head><body></body></html>
+<script>
+    
+function createSVGElement(name, properties)
+{
+    var element = document.createElementNS('http://www.w3.org/2000/svg', name);
+    return setSVGAttribute(element, properties);
+}
+
+function setSVGAttribute(element, properties)
+{
+    if (properties)
+    {
+        for (var identifier in properties)
+        {
+            if (identifier.indexOf("xlink:") == 0)
+            {
+                element.setAttributeNS("http://www.w3.org/1999/xlink", identifier, properties[identifier]);
+            }
+            else
+            {
+                element.setAttribute(identifier, properties[identifier]);
+            }
+        }
+    }
+    return element;
+}
+    
+document.body.style.cssText = "position:absolute; top:0; left:0; right:0; bottom:0;";
+    
+var stageWidth = document.body.offsetWidth,
+    stageHeight = document.body.offsetHeight;
+
+var canvas = createSVGElement("svg", 
+    {
+        "version": 1.1,
+        // "xmlns": "http://www.w3.org/2000/svg",
+        // "xmlns:xlink": "http://www.w3.org/1999/xlink",
+        "width": stageWidth, 
+        "height": stageHeight,
+    }),
+    
+    offsetX = stageWidth / 2, 
+    offsetY = stageHeight / 2,
+    
+    defs = createSVGElement("defs"),
+    
+    circle = createSVGElement("circle", 
+	{
+		"id": "shape",
+		"cx": 0,
+		"cy": 0,
+		"r": 2.7,
+//		"fill": "#89A54E",
+		"stroke": "none",
+	});
+    
+//console.log(offsetX, offsetY);
+    
+
+defs.appendChild(circle);
+canvas.appendChild(defs);
+document.body.appendChild(canvas);
+
+
+var uesdPoints = [],
+    
+    uesdSvgPoints = [],
+    
+    usedSize = 200;
+    
+    
+//var k = 1; setTimeout(function A()
+for (var i = 0; i < usedSize; i++)
+{
+    var point =
+        {
+            "classify": 0,
+            
+            "x": (Math.random() - 0.5) * 400,
+            
+            "y": (Math.random() - 0.5) * 300,
+        };
+        
+    var path = createSVGElement("use", 
+        {
+            "xlink:href": "#shape",
+            "x": point.x + offsetX,
+            "y": point.y + offsetY,
+            "fill": "#CCC",
+            "id": i,
+        });
+    
+    uesdPoints.push(point);
+    uesdSvgPoints.push(path);
+	canvas.appendChild(path);
+}
+    
+
+var classifiedPonits = [{"x": -200, "y": -150}, {"x": 200, "y": 150}, {"x": 200, "y": -150}, {"x": -200, "y": 150}];
+
+    classifiedColors = ["#2F66B8", "#89A54E", "#D10053", "#ECB018"],
+        
+    classifiedSize = classifiedColors.length;
+
+    
+//for (var i = 0; i < k; i++)
+//{
+//    setSVGAttribute(paths[centers[i]], 
+//        {
+//            "fill": colors[i]
+//        });
+//}
+    
+    
+window.setTimeout(function draw()
+    {
+        for (var i = 0; i < usedSize; i++)
+        {
+            var m = undefined,
+                d = undefined;
+            
+            var p1 = uesdPoints[i];
+                
+            for (var j = 0; j < classifiedSize; j++)
+            {
+                
+                var p2 = classifiedPonits[j],
+                    dx = p1.x - p2.x,
+                    dy = p1.y - p2.y,
+                    sqrt2 = dx*dx+dy*dy;
+                
+                if (d == undefined || m > sqrt2)
+                {
+                    d = j;
+                    m = sqrt2;
+                }
+            }
+            
+            p1.classify = d;
+            
+            console.log(d, m);
+            
+            setSVGAttribute(uesdSvgPoints[i], 
+                {
+                    "fill": classifiedColors[d]
+                });
+            
+        }
+        
+        
+        classifiedPonits = [{"x": 0, "y": 0, "z": 0}, {"x": 0, "y": 0, "z": 0}, {"x": 0, "y": 0, "z": 0}, {"x": 0, "y": 0, "z": 0}];
+    
+        for (var i = 0; i < usedSize; i++)
+        {
+            var p1 = uesdPoints[i];
+            
+            var c1 = classifiedPonits[p1.classify];
+            
+            c1.x = c1.x + p1.x;
+            c1.y = c1.y + p1.y;
+            
+            ++c1.z;
+        }
+        
+        for (var j = 0; j < classifiedSize; j++)
+        {
+            var c1 = classifiedPonits[j];
+            c1.x /= c1.z;
+            c1.y /= c1.z;
+        }
+        
+//        
+//        for (var i = 0; i < k; i++)
+//        {
+//            setSVGAttribute(paths[centers[i]], 
+//                {
+//                    "fill": "#333"
+//                });
+//        }
+        window.setTimeout(draw, 1000);
+    }, 1000);
+</script>

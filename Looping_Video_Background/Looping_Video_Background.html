@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+        <title>video_test</title>
+		<script src="video.js"></script>
+		<link href="video-js.min.css" rel="stylesheet">
+        <style>
+        	#viewport,
+			#viewport > #screen
+			{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 1024px;
+				height: 768px;
+				overflow: hidden;
+			}
+			.jumbotron-box, .jumbotron-bg, .jumbotron{
+				height: 768px;
+			}
+			.jumbotron-box{
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+			}
+			.jumbotron > .container > .text{
+				color: #fff;
+				font-size: 3.874em;
+				line-height: 55px;
+				font-family: proxima-nova-alt,sans-serif;font-style: normal;font-weight: 100;
+				font-size: 3.09em;
+				line-height: 44px;
+				width: 55%;	
+				position: relative;
+				vertical-align: middle;
+				top: 50%;
+				margin-top: -110px;
+			}
+			.jumbotron {
+				top: 220px;
+				left: 50px;
+				position: absolute;
+				background:transparent;
+				float: left;
+				width: 100%;
+				padding: 0px !important;
+				margin: 0px !important;
+				border-radius: 0px !important;
+			}
+			.button{
+				width: 120px;
+				height: 50px;
+				background-color: #fff;
+				line-height: 50px;
+				text-align: center;
+				border: #222 solid 1px;
+				float: right;
+				right: 100px;
+				bottom: 150px;
+				position: relative;
+			}
+			.text-r{color: #ff3030 !important;}
+			video{
+				top: 96px;
+				position: absolute;
+			}
+        </style>
+		<script>
+			var i = true;
+			function clickButton(){
+				if(i){
+					document.getElementsByName('text')[0].className = "text text-r";
+					i = false;
+				}else{
+					document.getElementsByName('text')[0].className = "text";
+					i = true;
+				}
+			}
+    videojs.options.flash.swf = "video-js.swf";
+		</script>
+    </head>
+
+    <body>
+        <div id="viewport">
+            <div id="screen">
+				<div class="jumbotron-box jumbotron-box-video">
+					<div class="jumbotron-bg">
+						
+<!--
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+-->
+						<video id="video_box" class="video-js vjs-default-skin" poster="http://www.webestools.com/page/media/videoTag/BigBuckBunny.png" loop="loop" controls autoplay="true" preload width="100%" height="576px" data-setup="{}">
+    <source src="page/img/big_buck_bunny_02.mp4" type='video/mp4' />
+							
+						</video>
+					</div>
+<!--
+					<div class="jumbotron">
+						<div class="container">
+							<div class="text" name="text">Welcome
+								<br/>Big Bunny.</div>
+						</div>
+					</div>
+					<div class="button" onclick="clickButton()">button</div>
+-->
+				</div>
+            </div>
+		</div>
+	</body>
+</html>

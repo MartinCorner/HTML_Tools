@@ -1,0 +1,129 @@
+
+.navigation-bottom {
+	position: absolute;
+	bottom: 0px;
+}
+
+.panel-container {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 1024px;
+	height: 220px;
+	-webkit-transform: translate3d(0px, 0px, 0px); 
+}
+
+.left-panel {
+	position: absolute;
+	top: 0px;
+	left: -336px;
+	width: 800px;
+	height: 220px;
+	/*background: -webkit-linear-gradient(left, #febd7e 0%,#ffac56 100%);*/
+	background: #ffac56;
+	z-index: 5;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+}
+.left-mid-container {
+	position: absolute;
+	top: 0px;
+	left: 464px;
+	width: 96px;
+	-webkit-perspective: 520;
+	height: 220px;
+	z-index: 3;
+}
+.right-mid-container {
+	position: absolute;
+	top: 0px;
+	left: 464px;
+	width: 96px;
+	-webkit-perspective: 520;
+	height: 220px;
+	z-index: 2;
+}
+
+.left-mid-panel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 140px;
+	height: 220px;
+	background: #fe8f1c;
+	cursor: pointer;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(70deg);
+	-webkit-transform-origin: center left;
+}
+.right-mid-panel {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 140px;
+	height: 220px;
+	cursor: pointer;
+	background: #c0701b; /*#fe8f1c;*/
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(-70deg);
+	-webkit-transform-origin: center right;
+}
+
+.right-panel {
+	position: absolute;
+	top: 0px;
+	right: -336px;
+	width: 800px;
+	height: 220px;
+	/*background: -webkit-linear-gradient(left, #ffac56 0%,#febd7e 100%);*/
+	background: #ffac56;
+	z-index: 5;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px); 
+}
+
+.page-copy {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 1024px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.left-content {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.right-content {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.left-pane-copy {
+	position: absolute;
+	top: 60px;
+	right: 120px;
+	text-align: center;
+	z-index: 5;
+}
+
+.right-pane-copy {
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	text-align: center;
+	z-index: 5;
+}

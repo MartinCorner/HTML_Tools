@@ -1,0 +1,56 @@
+﻿#drawToolSketchpad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 998;
+}
+#drawToolSketchpad.moved{
+    top: 50px;
+    z-index: 1000;
+}
+.hidden {
+    display: none;
+}
+#drawTool ul{
+    display: -webkit-box;
+    height: 210px;
+    width: 70px;
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    padding: 25px 0;
+    list-style: none;
+    background: url('../../content/img/navigation_bar/drawTool_panel.png') no-repeat;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+}
+#drawTool ul li{
+    width: 46px;
+    height: 27px;
+    padding: 0;
+    background: url('../../content/img/navigation_bar/drawTool-icons.png') top center no-repeat;
+	background-size: 25px 153px;
+}
+#drawTool ul li span{
+    display: none;
+}     
+#drawTool ul li.pencilGreen{
+    background-position-y: -43px;
+}   
+#drawTool ul li.brush{
+    background-position-y: -91px;
+}  
+#drawTool ul li.clear{
+    background-position-y: -133px;
+}
+#drawTool.revereted ul{
+    top: 35px;
+    -webkit-transform: translate3d(0,0,0) rotate(180deg);
+}
+#drawTool.revereted ul li{
+    -webkit-transform: translate3d(0,0,0) rotate(180deg);
+}

@@ -1,0 +1,65 @@
+#references_references .wrapper {
+	height: 565px;
+	margin: 20px auto;
+	width: 825px;
+	position: relative;
+}
+#references_references .scroll-indicator{
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 53px;
+	left: 492px;
+	background: url('../../content/img/app/arrows/arrows_sprite.png') 7px 0 no-repeat;
+	height: 10px;
+	width: 35px;
+	background-size: 90px 10px;
+}
+#references_references .scroll-indicator.scrolled{
+	background-position: -27px 0;
+}
+#references_references .scroll-indicator.end-scrolled{
+	background-position: -63px 0;
+}
+#references_references .wrapper ul{
+	list-style: none;
+	counter-reset: li;
+}
+#references_references .wrapper ul li{
+   margin-top: 25px;
+}
+#references_references .wrapper ul li{
+	display: -webkit-inline-box;
+	-webkit-box-align: center;
+}
+#references_references .wrapper ul li a span{
+	display: inline-block;
+    margin-left: -18px;
+}
+#references_references li a{
+	padding-left: 65px;
+	min-height: 50px;
+	display: -webkit-box;
+	/*-webkit-box-align: center;*/
+    margin-top: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+    line-height: 19px;
+}
+
+#references_references li a[data-pdf]{
+	background: url(../../content/img/references_references/pdf-icon.png) no-repeat left -5px;
+	background-size: 40px;
+}
+#references_references input {
+	width: auto;
+	height: auto;
+	border: 0px solid #ad9cc1;
+	background-color: transparent;
+}
+#references_references input.visited {
+	border: 1px solid rgb(125,125,125);
+}
+#references_references .invisible{
+	visibility: hidden;
+}

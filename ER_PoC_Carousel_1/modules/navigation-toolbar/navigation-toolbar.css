@@ -1,0 +1,164 @@
+#navigationToolbar{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	width: 1024px;
+	-webkit-transition: 0.7s -webkit-transform 0.3s;
+	-webkit-transform: translate3d(0,0,0);
+}
+#navigationToolbar.hidden{
+	-webkit-transform: translate3d(0, 68px, 0);
+}
+
+#navigationToolbar .handler{
+	width: 240px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 390px;
+	-webkit-appearance: none;
+	background: url("../../content/img/navigation_bar/toggler.png") 106px -44px no-repeat;
+	border: none;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-transition-delay: 100ms;
+	z-index: 1;
+}
+#navigationToolbar .handler:after{
+	pointer-events: none;
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: -390px;
+	width: 1024px;
+	height: 26px;
+	background: url("../../content/img/navigation_bar/panel.png") center top no-repeat;
+	z-index: -1;
+}
+#navigationToolbar.showed .handler{
+	background-position: 106px 23px;
+}
+
+#navigationToolbar .frame{
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e8e8e8));
+	-webkit-transform: translate3d(0,0,0);
+	z-index: 2;
+}
+
+#navigationToolbar.showed{
+	-webkit-transform: translate3d(0, -50px, 0);
+}
+#navigationToolbar.showed.opened{
+	-webkit-transform: translate3d(0, -768px, 0);
+	z-index: 1000;
+}
+#navigationToolbar.showed.opened .handler{
+	background-position:  106px -44px;
+	-webkit-transition: 0 all 500ms;
+	-webkit-transform: translate3d(0, 40px, 0) rotate(180deg);
+	z-index: 3;
+}
+
+#navigationToolbar .controls{
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-pack: end;
+	z-index: 4;
+}
+#navigationToolbar .controls button{
+	position: relative;
+	width: 55px;
+	height: 50px;
+	-webkit-appearance: none;
+	border: none;
+	background: url('../../content/img/navigation_bar/icons.png') -28px 15px no-repeat;
+	background-size: 300px 75px;
+	vertical-align: top;
+	display: block;
+}
+#navigationToolbar .controls .patient-profiles {
+	background-position: -119px 15px;
+}
+#navigationToolbar .controls .qa-chater {
+	background-position: -211px 13px;
+}
+#navigationToolbar .controls .prescriber-aid{
+	background-position: -74px 17px;
+}
+#navigationToolbar .controls .buidler{
+	background-position: -138px  15px;
+}
+#navigationToolbar .controls .shopping-cart{
+	background-position: -220px 15px;
+}
+#navigationToolbar .controls .drawtool{
+	background-position: 18px 17px;
+}
+#navigationToolbar .controls button.active{
+	background-position-y: -33px;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	height: 49px;
+}
+#navigationToolbar .controls:after,
+#navigationToolbar .controls button:first-of-type:after,
+#navigationToolbar .controls button:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+}
+#navigationToolbar .controls:after{
+	width: 55px;
+	background: url('../../content/img/xarelto-icon.png') center center no-repeat;
+	background-size: 37px;
+}
+#navigationToolbar .controls button:before{
+	width: 55px;
+	z-index: -1;
+}
+#navigationToolbar .controls button:first-of-type:after{
+	right: 54px;
+	left: auto;
+	width: 1024px;
+	pointer-events: none;
+}
+#navigationToolbar .controls button:first-of-type:after,
+#navigationToolbar .controls button:before{
+	background: url('../../content/img/navigation_bar/controls-bg.png') 0 -9px repeat-x;
+}
+#navigationToolbar .controls button.active:before{
+	background: url(../../content/img/navigation_bar/activebg.png) 0 -7px no-repeat;
+}
+#navigationToolbar .container{
+	overflow: visible;
+	-webkit-transform: translate3d(0,0,0);
+}
+#navigationToolbar .container.collection{
+	-webkit-transform: translate3d(0,0,0) !important;
+}
+#navigationToolbar .container .slideshow{
+	display: none;
+	margin-top: -50px;
+}
+#navigationToolbar .container .slideshow.active{
+	display: -webkit-box;
+}
+#navigationToolbar .container.collection .slideshow.active{
+	display: block;
+}
+
+.no-scroll .slideshow{
+	-webkit-transition: 0s !important;
+}
+
+#navigationToolbar .controls .product-manual {
+background-position: -261px  15px;
+}

@@ -1,0 +1,172 @@
+#page-2 #study-design-button{
+    position:absolute;
+    left: 834px;
+    top: 437px;
+    width: 155px;
+    height: 28px;
+    background-image: url(../../codes/images/study-design-button@2x.1669-730.png);
+    background-size: 155px 28px;
+    background-repeat: no-repeat;
+}
+#page-2 #study-design-text
+{
+    position:absolute;
+    left: 821px;
+    top: 295px;
+    width: 168px;
+    height: 131px;
+    background-image: url(../../codes/images/2/study-design-text@2x.1642-590.png);
+    background-size: 168px 131px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart
+{
+    position:absolute;
+    left: 133px;
+    top: 347px;
+    width: 641px;
+    height: 349px;
+    background-image: url(../../codes/images/2/chart@2x.266-694.png);
+    background-size: 641px 349px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart > #chart-1
+{
+    position:absolute;
+    left: 100px;
+    bottom: 98px;
+    width: 111px;
+    height: 81px;
+    background-image: url(../../codes/images/2/chart-1@2x.207-338.png);
+    background-size: 111px 81px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart > #chart-2
+{
+    position:absolute;
+    left: 217px;
+    bottom: 98px;
+    width: 110px;
+    height: 94px;
+    background-image: url(../../codes/images/2/chart-2@2x.444-313.png);
+    background-size: 110px 94px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart > #chart-3
+{
+    position:absolute;
+    left: 333px;
+    bottom: 98px;
+    width: 110px;
+    height: 91px;
+    background-image: url(../../codes/images/2/chart-3@2x.680-318.png);
+    background-size: 110px 91px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart > #chart-a
+{
+    position: absolute;
+    left: 154px;
+    top: 109px;
+    width: 118px;
+    height: 52px;
+    background-image: url(../../codes/images/2/chart-a@2x.316-218.png);
+    background-size: 118px 52px;
+    background-repeat: no-repeat;
+}
+
+#page-2 > #chart > #chart-b
+{
+    position:absolute;
+    left: 146px;
+    top: 70px;
+    width: 242px;
+    height: 90px;
+    background-image: url(../../codes/images/2/chart-b@2x.298-141.png);
+    background-size: 242px 90px;
+    background-repeat: no-repeat;
+}
+
+
+#page-2 #text
+{
+    position:absolute;
+    left: 634px;
+    top: 703px;
+    width: 285px;
+    height: 45px;
+    background-image: url(../../codes/images/2/text@2x.1268-1406.png);
+    background-size: 285px 45px;
+    background-repeat: no-repeat;
+}
+
+#page-2 #title
+{
+    position:absolute;
+    left: 134px;
+    top: 157px;
+    width: 704px;
+    height: 109px;
+    font-family: 'MetaPlusBold';
+    font-size: 21pt;
+    vertical-align: text-top;
+    word-spacing: 0px;
+    line-height: 30px;
+    color: #006F3B;
+}
+
+#page-2 #title > little{
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+}
+#page-2 #title2
+{
+    position: absolute;
+    left: 134px;
+    top: 289px;
+    width: 477px;
+    height: 169px;
+    font-family: 'MetaPlusBook-Roman';
+    font-size: 12pt;
+    vertical-align: text-top;
+    word-spacing: -1px;
+    line-height: 22px;
+    color: #726a65;
+}
+
+#page-2 #title2 > little{
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+}
+#page-2 #lit-logo
+{
+    position:absolute;
+    left: 760.5px;
+    top: 630px;
+    width: 144.5px;
+    height: 67.5px;
+    background-image: url(../../codes/images/2/lit-logo@2x.1521-1260.png);
+    background-size: 144.5px 67.5px;
+    background-repeat: no-repeat;
+}
+
+#page-2 #text2{
+    position: absolute;
+    top: 665px;
+    left: 205px;
+    width: 300px;
+    height: 50px;
+}
+#page-2 #text2 > p{
+    font-family: 'MetaPlusBook-Roman';
+    font-size: 13px;
+    margin: 0;
+    color: #929497;
+}

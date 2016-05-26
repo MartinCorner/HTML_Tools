@@ -1,0 +1,84 @@
+
+#predefined > div.sectionSelection
+{
+    position: absolute;
+    width:100%;
+	height: 100%;
+    -webkit-perspective: 2000px;
+    -webkit-transform-style: preserve-3d;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    
+}
+
+/*#predefined > div.BXT_logo
+{
+    position:absolute;
+    left: 830px;
+    top: 43px;
+    width: 152px;
+    height: 45px;
+    background-image: url(../../content/img/BXT_logo.png);
+    background-size: 152px 45px;
+    background-repeat: no-repeat;
+}*/
+
+#predefined > div.stage
+{
+    width:100%;
+    height: 100%;
+    background-image: url('../../content/img/predefined/stage.png');
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    position: absolute;
+    pointer-events:none;
+}
+
+#predefined > div.obstruct
+{
+    position:absolute;
+    left: 305px;
+    top: 356px;
+    width: 450px;
+    height: 111px;
+    background-image: url('../../content/img/predefined/obstruct.png');
+    background-size: 450px 111px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateZ(-200px) scale(1.2);
+    pointer-events:none;
+
+}
+
+#predefined > div.sectionSelection img
+{
+    position: absolute;
+    left: 410px;
+    top: 156px;
+    width: 244px;
+    height: 393px;
+    -webkit-backface-visibility: hidden;
+}
+
+#predefined > div.story_name
+{
+    width:900px;
+    top:130px;
+    font-size:22px;
+    position: relative;
+    font-family: 'MSYHBD';
+    color:rgb(200,0,6);
+    text-align: center;
+    margin: 0 40px 0 auto;
+}
+#predefined > div.nav_name
+{
+    width:900px;
+    top:130px;
+    font-size:22px;
+    position: relative;
+    font-family: 'MSYHBD';
+    color:rgb(200,0,6);
+    text-align: center;
+    margin: 0 40px 10px auto;
+}

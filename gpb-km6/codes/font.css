@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ubuntu-BI';
+    font-style: italic;
+    font-weight: bold;
+    src: url('./fonts/Ubuntu BoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Md';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Ubuntu Medium.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Lt';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./fonts/Ubuntu Light.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./fonts/HelveticaNeueLTStd-Lt.otf') format('opentype');
+}
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    src: url('./fonts/HelveticaNeueLTStd-Lt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Th';
+    src: url('./fonts/HelveticaNeueLTStd-Th.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/HelveticaNeueLTStd Roman.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MetaOT Light';
+    src: url('./fonts/MetaOT-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MetaPlusBold';
+    src: url('./fonts/MetaPlusBold-Roman.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MetaPlusBook-Roman';
+    src: url('./fonts/MetaPlusBook-Roman.otf') format('opentype');
+}
+
+@font-face{font-family:'HelveticaNeueLTStdThCn';src:url("fonts/HelveticaNeueLTStd-ThCn-eddaaf0a5f875495a366e16d2253bdb7.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'HelveticaNeueLTStd75Bold';src:url("fonts/HelveticaNeueLTStd-Bd-c2d10fc2fbda7b0935bb8e5f06b6f635.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'HelveticaNeueLTStd45Light';src:url("fonts/HelveticaNeueLTStd-Lt-efe95ba3bab6b3c125124942029814f9.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'HelveticaNeueLTStdLtCn';src:url("fonts/HelveticaNeueLTStd-LtCn-c744f651cf5d28068727f08e29e1f4d7.otf") format("opentype");
+font-weight:normal;
+font-style:normal;
+}
+@font-face{font-family:'MetaPlusBold';src:url("fonts/MetaPlusBold-Roman-8fa4f3c0cc369e0df4eeb445f42028d0.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusBook';src:url("fonts/MetaPlusBook-Roman-4461e1a8f1bd0b5331778f1454ddd67d.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusBookItalic';src:url("fonts/MetaPlusBook-Italic2-4cba526d10bfc84e22cd951824f344a5.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusMedium';src:url("fonts/MetaPlusMedium-Roman-f6458d84af7f87c5cfe2629dbcd39ea9.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusBoldCaps';src:url("fonts/MetaPlusBold-Caps-89d475d7b0f597aaf084873064b573d0.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusBookCaps';src:url("fonts/MetaPlusBook-Caps-a6b61ef4d25bfa2ea9315414362ea978.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MetaPlusMediumCaps';src:url("fonts/MetaPlusMedium-Caps-eaa29bfe4e414d8270cb59c0cf3e8a06.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MyriadProRegular';src:url("fonts/MyriadPro-Regular-8a467a750d9ceb8d05929364315bffc8.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MyriadProBold';src:url("fonts/MyriadPro-Bold-0ba2da5cdf96597e807d62f2781e5a3f.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}
+@font-face{font-family:'MinionProBoldItalic';src:url("fonts/MinionPro-BoldIt-8b0a62715ee374d11179b872a28169b2.otf") format("opentype");
+font-weight:normal;
+font-style:normal
+}

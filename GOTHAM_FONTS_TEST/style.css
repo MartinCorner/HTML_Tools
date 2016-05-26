@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('./fonts/Gotham Black.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-BlackItalic';
+    src: url('./fonts/Gotham BlackItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('./fonts/Gotham Bold.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-BoldItalic';
+    src: url('./fonts/Gotham BoldItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('./fonts/Gotham Book.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-BookItalic';
+    src: url('./fonts/Gotham BookItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('./fonts/Gotham Light.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-LightItalic';
+    src: url('./fonts/Gotham LightItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('./fonts/Gotham Medium.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-MediumItalic';
+    src: url('./fonts/Gotham MediumItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('./fonts/Gotham Thin.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-ThinItalic';
+    src: url('./fonts/Gotham ThinItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-Ultra';
+    src: url('./fonts/Gotham Ultra.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-UltraItalic';
+    src: url('./fonts/Gotham UltraItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-XLight';
+    src: url('./fonts/Gotham XLight.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}
+@font-face {
+    font-family: 'Gotham-XLightItalic';
+    src: url('./fonts/Gotham XLightItalic.otf') format('truetype');
+    -webkit-font-smoothing: 'antialiased';
+}

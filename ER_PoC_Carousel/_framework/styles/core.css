@@ -1,0 +1,26 @@
+/*
+  Please leave the !important declarations. 
+*/
+
+
+/*=== ERROR STYLES ===*/
+.error-header {
+  background-color: red !important;
+  color: white !important;
+  padding: 25px !important;
+  text-align: center !important;
+  font-size: 2em !important;
+  margin:0 !important;
+  margin-bottom: 50px !important;
+}
+.error-message {
+  border:1px solid #bbb;
+  color:#454545;
+  font-weight:bold;
+  margin:25px 100px;
+  padding:50px;
+}
+.error-slide-id, .error-structure-id {
+  font-family:'courier new';
+  font-weight:normal;
+}

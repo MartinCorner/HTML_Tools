@@ -1,0 +1,274 @@
+{
+	"storyboard":["play"],
+	"slides":{
+		"splash":{
+			"name":"封面",
+            "id":"Splash-page",
+			"file":"splash.html",
+			"monitoring": {
+				"chapter": "封面",
+                "chapterId": "Splash-page"
+			}
+		},
+		"unacceptable_mortality_unacceptable_mortality":{
+			"name":"Mortality and Major CV Events",
+			"file":"unacceptable_mortality_unacceptable_mortality.html",
+			"monitoring": {
+				"chapterId": "CV Risk"
+			}
+		},
+		"characterstics_of_ideal":{
+			"name":"The Dual Pathway Strategy Matters",
+			"file":"characterstics_of_ideal.html",
+			"monitoring": {
+				"chapterId": "Dual Pathway"
+			}
+		},
+		"references_references":{
+			"name":"References",
+			"file":"references_references.html",
+			"monitoring": {
+				"chapterId": "References"
+			}
+		},
+		"predefined":{
+			"name":"导航",
+            "id":"navigation",
+			"file":"predefined.html",
+			"monitoring": {
+				"chapter": "导航",
+                "chapterId": "navigation"
+			}
+		},
+		"da_popup":{
+			"name":"da_popup",
+			"file":"da_popup.html",
+			"monitoring": {
+				"chapterId": "da_popup"
+			}
+		},
+		"scenario_popup":{
+			"name":"scenario_popup",
+			"file":"scenario_popup.html",
+			"monitoring": {
+				"chapterId": "scenario_popup"
+			}
+		},
+		"doctor_survey" : {
+			"name" : "doctor_survey slide",
+			"file" : "doctor_survey.html",
+			"monitoring": {
+				"chapterId": "Survey"
+			}
+		},
+		"doctor_detailer_helpfull" : {
+			"name" : "doctor_detailer_helpfull slide",
+			"file" : "doctor_detailer_helpfull.html",
+			"monitoring": {
+				"chapterId": "helpfull"
+			}
+		},
+		"start_index":{
+			"name":"Builder Home",
+			"file":"start_index.html",
+			"monitoring": {
+				"chapter": "Xarelto Toolbox",
+				"chapterId": "Builder Tool"
+			}
+		},
+		"builder":{
+			"name":"Build Presentation",
+			"file":"builder.html",
+			"monitoring": {
+				"chapter": "Xarelto Toolbox",
+				"chapterId": "Builder Tool"
+			}
+		},
+		"showplaylist":{
+			"name":"My Presentations",
+			"file":"showplaylist.html",
+			"monitoring": {
+				"chapter": "Xarelto Toolbox",
+				"chapterId": "Builder Tool"
+			}
+		},
+		"dual_pathway":{
+			"name":"Thrombin Levels Remain Elevated",
+			"file":"dual_pathway.html",
+			"valid":true,
+			"monitoring": {
+				"chapterId": "Dual Pathway"
+			}
+		},
+		"starters_home":{
+			"name":"首页",
+            "id":"home",
+			"valid":true,
+			"file":"starters_home.html",
+			"monitoring": {
+				"chapter": "首页",
+                "chapterId": "home"
+			}
+		},
+		"starters_treating_acs":{
+			"name":"Treatment Approach",
+			"valid":true,
+			"file":"starters_treating_acs.html",
+			"monitoring": {
+				"chapterId": "Dual Pathways Matter"
+			}
+		},
+		"starters_xarelto_efficacy":{
+			"name":"Xarelto Efficacy CV Mortality",
+			"valid":true,
+			"file":"starters_xarelto_efficacy.html",
+			"monitoring": {
+				"chapterId": "Improving Outcomes & Saving Lives Matters"
+			}
+		},
+		"starters_xarelto_safety":{
+			"name":"Xarelto Safety",
+			"valid":true,
+			"file":"starters_xarelto_safety.html",
+			"monitoring": {
+				"chapterId": "Understanding Bleeding Matters"
+			}
+		},
+		"starters_guidelines_matter":{
+			"name":"Xarelto in ESC STEMI Guidelines",
+			"valid":true,
+			"file":"starters_guidelines_matter.html",
+			"monitoring": {
+				"chapterId": "Guidelines Matter"
+			}
+		},
+		"starters_confidence_to_treat":{
+			"name":"Confidence to Treat",
+			"valid":true,
+			"file":"starters_confidence_to_treat.html",
+			"monitoring": {
+				"chapterId": "Confidence to Treat Matters"
+			}
+		},
+		"P1":{
+			"name":"高速列车 02",
+			"id":"high-speed train 02",
+			"valid":true,
+			"file":"/story_8/P1.html",
+			"monitoring": {
+				"chapter": "高速列车",
+				"chapterId": "high-speed train"
+			}
+		},
+		"family":{
+			"name":"高速列车",
+			"id":"high-speed train",
+			"valid":true,
+			"file":"/story_8/family.html",
+			"monitoring": {
+				"chapter": "高速列车",
+				"chapterId": "high-speed train"
+			}
+		},
+		"page":{
+			"name":"高速列车 01",
+			"id":"high-speed train 01",
+			"valid":true,
+			"file":"/story_8/page.html",
+			"monitoring": {
+				"chapter": "高速列车",
+				"chapterId": "high-speed train"
+			}
+		}
+	},
+	"structures":{
+		"builder":{
+			"name":"BUILDER",
+			"type":"slideshow",
+			"content":["start_index", "showplaylist", "builder"]
+		},
+		"intro":{
+			"name":"Splash-page",
+			"type":"slideshow",
+			"content":["splash"]
+		},
+		"play":{
+			"name":"ACS",
+			"type":"collection",
+			"content":["predefined", "home"]
+		},
+		"start":{
+			"name":"Splash-page",
+			"type":"collection",
+			"content":["predefined"]
+		},
+		"buildchapters":{
+			"name":"ACS presentation",
+			"type":"collection",
+			"content":["cv_risk", "dual_pathway", "doctor_feedback"]
+		},
+		"defaultbuildchapters":{
+			"name":"ACS presentation",
+			"type":"collection",
+			"content":["references", "predefined", "home"]
+		},
+		"home":{
+			"name":"Indication Landing",
+			"type":"slideshow",
+			"role":"home",
+			"content":["starters_home"]
+		},
+		"references":{
+			"name":"参考文献",
+			"type":"slideshow",
+			"content":["references_references"]
+		},
+		"predefined":{
+			"name":"导航",
+			"type":"slideshow",
+			"content":["predefined"]
+		},
+		"starters":{
+			"name":"Conversation Starter",
+			"type":"slideshow",
+			"content":["starters_home"]
+		},
+		"dual_pathway_strategy_matters":{
+			"name":"Dual-Pathway Strategy Matters",
+			"type":"slideshow",
+			"content":["starters_treating_acs"]
+		},
+		"understanding_bleeding_matters":{
+			"name":"Understanding Bleeding Matters",
+			"type":"slideshow",
+			"content":["starters_xarelto_safety"]
+		},
+		"improving_outcomes_saving_lives_matters":{
+			"name":"Improving Outcomes & Saving Lives Matters",
+			"type":"slideshow",
+			"content":["starters_xarelto_efficacy"]
+		},
+		"guidelines_matter":{
+			"name":"Guidelines Matter",
+			"type":"slideshow",
+			"content":["starters_guidelines_matter"]
+		},
+		"experience_matters":{
+			"name":"Experience Matters",
+			"type":"slideshow",
+			"content":["starters_confidence_to_treat"]
+		},
+		"doctor_feedback":{
+			"name":"医生反馈",
+			"type":"slideshow",
+			"content":["doctor_survey","doctor_detailer_helpfull"]
+		},
+		"P1":{
+			"name":"高速列车",
+			"type":"slideshow",
+			"content":["P1"]
+		}
+	},
+	"embedded":{
+	}
+}

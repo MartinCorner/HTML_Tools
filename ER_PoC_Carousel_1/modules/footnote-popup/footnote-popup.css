@@ -1,0 +1,45 @@
+/**
+ * @author: Sergey Tkalych sergey.tkalych@qa-power.com
+ */
+.footnote.with-button{
+	display: none;
+}
+.footnote-popup{
+	width: 720px;
+	padding: 40px;
+	margin: 220px auto 0 auto;
+	min-height: 100px;
+}
+.footnote-popup p{
+	font-family: "Frutiger55RomanRegular";
+	color: #000000;
+	text-align: left;
+	line-height: 17px;
+}
+.footnote-popup.multi p{
+	display: none;
+}
+.footnote-popup.multi p.active{
+	display: block;
+}
+.footnote-popup p br{
+	display: none;
+}
+.footnote-popup p br.visible{
+	display: inline;
+}
+.foot-button{
+	height: 40px;
+	position: absolute;
+	left: 25px;
+	bottom: 30px;
+	width: 125px;
+	-webkit-border-radius: 7px;
+	background: #613A8F;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	color: white;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 17px;
+}

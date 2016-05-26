@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+#train
+{
+    position:absolute;
+    left: 1124px;
+    left: 319px;
+    top: 456px;
+    width: 705px;
+    height: 177px;
+    background-image: url(images/train.319-456.png);
+    background-size: 705px 177px;
+    background-repeat: no-repeat;
+}
+
+#lawn
+{
+    position:absolute;
+    left: 0px;
+    top: 590px;
+    width: 1024px;
+    height: 178px;
+    background-image: url(images/lawn.0-590.png);
+    background-size: 1024px 178px;
+    background-repeat: no-repeat;
+}
+
+#background
+{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 1024px;
+    height: 706px;
+    background-image: url(images/background.jpg);
+    background-size: 1024px 706px;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes SpeedIn {
+    0% {
+        -webkit-transform: translateX(705px) skewX(-10deg);
+    }
+
+    80% {
+        -webkit-transform: skewX(-10deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) skewX(0deg);
+    }
+}
+
+#train.active {
+    -webkit-animation-name: SpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+}
+
+#story_train >div.map_number
+{
+    position:absolute;
+    right: 45px;
+    bottom: 30px;
+    width: 200px;
+    font-size: 18px;
+    color: #000000;
+    text-align: right;
+}

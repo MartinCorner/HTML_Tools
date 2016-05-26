@@ -1,0 +1,214 @@
+
+.hide {
+	display: none;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+/*	background-image: url(../images/15.png);*/
+	background-size: 1024px 768px;
+}
+
+
+.panel-container {
+	position: absolute;
+	top: 258px;
+	left: 0px;
+	width: 1024px;
+	height: 220px;
+	-webkit-transform: translate3d(0px, 0px, 0px); 
+}
+
+.left-panel {
+	position: absolute;
+    left: 0px;
+/*    top: 257px;*/
+    width: 446px;
+    height: 299px;
+	border: 1px solid #fff;
+	background-image: url(../images/left-panel-bg@2x.0-514.png);
+    background-size: 446px 299px;
+    background-repeat: no-repeat;
+	z-index: 5;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+}
+
+.left-panel-logo
+{
+    position:absolute;
+	left: -229px;
+	top: -33px;
+    width: 231px;
+    height: 232px;
+    background-image: url(../images/left-panel-logo@2x.196-572.png);
+    background-size: 231px 232px;
+    background-repeat: no-repeat;
+}
+
+.right-panel-logo
+{
+    position:absolute;
+	left: 16px;
+	top: -56px;
+    width: 231px;
+    height: 235px;
+    background-image: url(../images/right-panel-logo@2x.1396-566.png);
+    background-size: 231px 235px;
+    background-repeat: no-repeat;
+}
+
+.left-mid-container {
+	position: absolute;
+	top: 0px;
+	left: 446px;
+	width: 96px;
+	-webkit-perspective: 654;
+	height: 280px;
+	z-index: 3;
+}
+.right-mid-container {
+	position: absolute;
+	top: 0px;
+	left: 486px;
+	width: 96px;
+	-webkit-perspective: 654;
+	height: 280px;
+	z-index: 2;
+}
+
+.left-mid-panel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 203px;
+	height: 299px;
+	border: 1px solid #fff;
+	background-image: url(../images/mid-panel-bg-l.png);
+	background-size: 203px 299px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(70deg);
+	-webkit-transform-origin: center left;
+}
+.right-mid-panel {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 213px;
+	height: 299px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	background-image: url(../images/mid-panel-bg-r.png);
+	background-size: 213px 299px;
+	background-repeat: no-repeat;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(-70deg);
+	-webkit-transform-origin: center right;
+}
+
+.right-panel {
+	position: absolute;
+	top: 0px;
+    left: 581px;
+    width: 443px;
+    height: 299px;
+	border: 1px solid #fff;
+	background-image: url(../images/right-panel-bg@2x.1162-514.png);
+    background-size: 443px 299px;
+    background-repeat: no-repeat;
+	z-index: 5;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px); 
+}
+.pill {
+	margin: -15px 0 -20px 0;
+}
+.left-content {
+	width: 50px;
+	height: 50px;
+	background-color: #1527ff;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.right-content {
+	width: 50px;
+	height: 50px;
+	background-color: #15f6ff;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.left-pane-copy {
+	position: absolute;
+	top: 60px;
+	right: 120px;
+	text-align: center;
+	z-index: 5;
+}
+
+.right-pane-copy {
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	text-align: center;
+	z-index: 5;
+}
+.pane-title {
+	color: #50092c;
+	font-size: 40px;
+	line-height: 0.9em;
+	font-weight: bold;
+}
+
+.pane-sub-title {
+	line-height: 1.5em;
+	color: #50092c;
+	opacity: 0.8;
+	font-size: 16px;
+}
+.pane-toggle-container {
+	opacity: 0;
+}
+
+.hepatic-tab {
+	width: 50px;
+	height: 50px;
+	background-color: #15ff1e;
+	position: absolute;
+	top: 60px;
+	left: 100px;
+	z-index: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.renal-tab {
+	width: 50px;
+	height: 50px;
+	background-color: #ffff15;
+	position: absolute;
+	top: 53px;
+	left: 35px;
+	z-index: 2;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+

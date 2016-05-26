@@ -1,0 +1,86 @@
+.thumbindicator {
+    padding:15px;
+}
+.thumbButton {
+    display: none;
+    /*background: url('../../content/img/slider_landscape.png') no-repeat top center;*/
+    position: absolute;
+	width: 168px;
+	height: 70px;
+	bottom: 9px;
+	right: 0;
+	/*z-index: 200;*/
+}
+.thumbButton.on {
+    background-position: bottom center;
+}
+.thumbButton.show {
+    display: block;
+}
+#thumbs {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index:3;
+	height: 180px;
+	background: url( ../../content/img/app/pagethumbs/background.png) repeat-x;
+	width: 1024px;
+	display: block;
+	-webkit-transform: translate3d(0,180px,0);
+	-webkit-transition: all linear 300ms;
+}
+#thumbs.active {
+	-webkit-transform: translate3d(0,0,0);
+}
+#thumbs .scroll-wrapper {
+	height: 180px;
+	width: 818px;
+	position: absolute;
+}
+#thumbs ul {
+    position: absolute;
+    list-style: none;
+	height: 180px;
+	white-space: nowrap;
+}
+#thumbs li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    padding: 96px;
+    -webkit-opacity: 0.5;
+}
+#thumbs li img{
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+}
+#thumbs li.active  img{
+    opacity: 1;
+    -webkit-opacity: 1;
+}
+#thumbs li.active {-webkit-opacity: 1;}
+.branding {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 230px;
+	height: 100%;
+	background-image: url(../../content/img/app/pagethumbs/branding.png);
+}
+indicators indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /*background: url("../../content/img/indicator.png") left top no-repeat;*/
+    margin-right: 7px;
+}
+indicators indicator.active {
+    background-position: right top;
+}
+.th_show {display: block;}
+.foter{
+    width: 100%;
+    height: 55px;
+    z-index: 10;
+    /*background: url("../../content/img/left-logo.png") no-repeat 10px 10px, url("../../content/img/right-logo.png") no-repeat right 10px,white;*/
+}

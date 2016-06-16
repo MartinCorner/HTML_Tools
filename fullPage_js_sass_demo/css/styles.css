@@ -1,0 +1,103 @@
+/* line 7, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.section .fp-tableCell {
+  position: relative;
+  z-index: 99; }
+
+/* line 11, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.section h1 {
+  color: #ff3a3a; }
+
+/* line 17, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#section0 .home-bg {
+  width: 100%;
+  height: calc(300vh);
+  position: absolute;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+/* line 32, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#section1 img {
+  left: 130%;
+  position: relative; }
+
+/* line 36, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#section1 p {
+  display: none; }
+
+/* line 41, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#section2 .intro {
+  left: -130%;
+  position: relative; }
+
+/* line 46, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.card {
+  width: 100%;
+  height: calc(50vh); }
+
+/* line 56, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#card-1 {
+  background-color: #e3bb88; }
+
+/* line 60, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#card-2 {
+  background-color: #db9864;
+  transform: translateY(0vh); }
+
+/* line 65, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#card-3 {
+  background-color: #b1695a;
+  transform: translateY(-33.33333vh); }
+
+/* line 70, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#card-4 {
+  background-color: #644749;
+  transform: translateY(-66.66667vh); }
+
+/* line 76, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step2 #card-2 {
+  transform: translateY(-33.33333vh); }
+
+/* line 79, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step2 #card-3 {
+  transform: translateY(-33.33333vh); }
+
+/* line 82, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step2 #card-4 {
+  transform: translateY(-66.66667vh); }
+
+/* line 88, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step3 #card-2 {
+  transform: translateY(-33.33333vh); }
+
+/* line 91, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step3 #card-3 {
+  transform: translateY(-66.66667vh); }
+
+/* line 94, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step3 #card-4 {
+  transform: translateY(-66.66667vh); }
+
+/* line 100, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step4 #card-2 {
+  transform: translateY(-33.33333vh); }
+
+/* line 103, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step4 #card-3 {
+  transform: translateY(-66.66667vh); }
+
+/* line 106, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+.step4 #card-4 {
+  transform: translateY(-100vh); }
+
+/* line 113, /Users/martin/Documents/eDM_HTML/Spiolto_WIP_11/css/styles.scss */
+#card-2,
+#card-3,
+#card-4 {
+  transition: transform 1s; }
+
+/*# sourceMappingURL=styles.css.map */

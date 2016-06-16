@@ -1,0 +1,115 @@
+$color-red: #ff3a3a;
+$color-card1: #e3bb88;
+$color-card2: #db9864;
+$color-card3: #b1695a;
+$color-card4: #644749;
+.section {
+    .fp-tableCell {
+        position: relative;
+        z-index: 99;
+    }
+    h1 {
+        color: $color-red;
+    }
+}
+
+#section0 {
+    .home-bg {
+        width: 100%;
+        height: calc(300vh);
+        position: absolute;
+        z-index: 98;
+        top: 0;
+        left: 0;
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+
+#section1 {
+    img {
+        left: 130%;
+        position: relative;
+    }
+    p {
+        display: none;
+    }
+}
+
+#section2 .intro {
+    left: -130%;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: calc(50vh);
+}
+
+$num0: (50/3);
+$num1: $num0 * 0;
+$num2: $num0 * 2;
+$num3: $num0 * 4;
+$num4: $num0 * 6;
+#card-1 {
+    background-color: $color-card1;
+}
+
+#card-2 {
+    background-color: $color-card2;
+    transform: translateY(-$num1+vh);
+}
+
+#card-3 {
+    background-color: $color-card3;
+    transform: translateY(-$num2+vh);
+}
+
+#card-4 {
+    background-color: $color-card4;
+    transform: translateY(-$num3+vh);
+}
+
+.step2 {
+    #card-2 {
+        transform: translateY(-$num2+vh);
+    }
+    #card-3 {
+        transform: translateY(-$num2+vh);
+    }
+    #card-4 {
+        transform: translateY(-$num3+vh);
+    }
+}
+
+.step3 {
+    #card-2 {
+        transform: translateY(-$num2+vh);
+    }
+    #card-3 {
+        transform: translateY(-$num3+vh);
+    }
+    #card-4 {
+        transform: translateY(-$num3+vh);
+    }
+}
+
+.step4 {
+    #card-2 {
+        transform: translateY(-$num2+vh);
+    }
+    #card-3 {
+        transform: translateY(-$num3+vh);
+    }
+    #card-4 {
+        transform: translateY(-$num4+vh);
+    }
+}
+
+#card-2,
+#card-3,
+#card-4 {
+    transition: transform 1s;
+}

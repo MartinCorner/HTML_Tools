@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    300: 阵雨 -->
+<svg version="1.0" id="图层_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 255 255" enable-background="new 0 0 255 255" xml:space="preserve">
+
+<!--
+    <use x ="-140" y ="-120" xlink:href="#p1">
+    <animateMotion path="M80 120 L80 260" begin="0.5s" dur="3s" rotate="auto" repeatCount="indefinite"/>
+    </use>
+-->
+    <use x ="-140" y ="-120" xlink:href="#p1">
+    <animateMotion path="M105 120 L105 260" begin="2s" dur="3s" rotate="auto" repeatCount="indefinite"/>
+    </use>
+<!--
+    <use x ="-140" y ="-120" xlink:href="#p1">
+    <animateMotion path="M130 120 L130 260" begin="0s" dur="3s" rotate="auto" repeatCount="indefinite"/>
+    </use>
+-->
+    <use x ="-140" y ="-120" xlink:href="#p1">
+    <animateMotion path="M155 120 L155 260" begin="0s" dur="3s" rotate="auto" repeatCount="indefinite"/>
+    </use>
+<!--
+    <use x ="-140" y ="-120" xlink:href="#p1">
+    <animateMotion path="M180 120 L180 260" begin="2.5s" dur="3s" rotate="auto" repeatCount="indefinite"/>
+    </use>
+-->
+<defs>
+	<path id="p1" fill="#8DEAFF" d="M142.2,127c0,1.3-0.8,4.9-4.6,5.3c-3.8,0.3-11.9-5.3-11.9-5.3s8-5.6,11.9-5.3
+		C141.4,122,142.2,125.6,142.2,127z	">
+	</path>
+</defs>
+<g>
+    <animateTransform  repeatCount="indefinite" type="rotate" fill="remove" from="0 61.1 60.9" to="360 61.1 60.9" dur="10s" begin="0s" restart="always" attributeName="transform" calcMode="linear" additive="replace" accumulate="none"></animateTransform>
+	<circle fill="#FF0D0D" cx="61.1" cy="60.9" r="30.7"/>
+	<path fill="#FF0D0D" d="M19.3,60.9L19.3,60.9c0,1.5-1.1,2.6-2.6,2.6H2.6c-1.5,0-2.6-1.1-2.6-2.6l0,0c0-1.5,1.1-2.6,2.6-2.6h13.9
+		C18.2,58.3,19.3,59.4,19.3,60.9z"/>
+	<path fill="#FF0D0D" d="M122,60.9L122,60.9c0,1.5-1.1,2.6-2.6,2.6h-13.9c-1.5,0-2.6-1.1-2.6-2.6l0,0c0-1.5,1.1-2.6,2.6-2.6h13.9
+		C120.9,58.3,122,59.4,122,60.9z"/>
+	<path fill="#FF0D0D" d="M61.1,102.8L61.1,102.8c1.5,0,2.6,1.1,2.6,2.6v13.9c0,1.5-1.1,2.6-2.6,2.6l0,0c-1.5,0-2.6-1.1-2.6-2.6
+		v-13.9C58.5,103.9,59.8,102.8,61.1,102.8z"/>
+	<path fill="#FF0D0D" d="M61.1,0L61.1,0c1.5,0,2.6,1.1,2.6,2.6v13.9c0,1.5-1.1,2.6-2.6,2.6l0,0c-1.5,0-2.6-1.1-2.6-2.6V2.4
+		C58.5,1.1,59.8,0,61.1,0z"/>
+	<path fill="#FF0D0D" d="M90.8,90.4L90.8,90.4c1.1-1.1,2.6-1.1,3.8,0l9.9,9.9c1.1,1.1,1.1,2.6,0,3.8l0,0c-1.1,1.1-2.6,1.1-3.8,0
+		l-9.9-9.9C89.8,93.2,89.8,91.5,90.8,90.4z"/>
+	<path fill="#FF0D0D" d="M18.2,17.8L18.2,17.8c1.1-1.1,2.6-1.1,3.8,0l9.9,9.9c1.1,1.1,1.1,2.6,0,3.8l0,0c-1.1,1.1-2.6,1.1-3.8,0
+		l-9.9-9.9C17,20.4,17,18.7,18.2,17.8z"/>
+	<path fill="#FF0D0D" d="M31.7,90.6L31.7,90.6c1.1,1.1,1.1,2.6,0,3.8l-9.9,9.9c-1.1,1.1-2.6,1.1-3.8,0l0,0c-1.1-1.1-1.1-2.6,0-3.8
+		l9.9-9.9C28.9,89.5,30.6,89.5,31.7,90.6z"/>
+	<path fill="#FF0D0D" d="M104.2,17.8L104.2,17.8c1.1,1.1,1.1,2.6,0,3.8l-10,9.9c-1.1,1.1-2.6,1.1-3.8,0l0,0c-1.1-1.1-1.1-2.6,0-3.8
+		l9.9-9.9C101.6,16.9,103.3,16.9,104.2,17.8z"/>
+</g>
+<path fill="#36E7FF" d="M40.3,109.9c-5.4-42.6,37.5-40.5,37.5-40.5C75,60,84.1,20.8,120.5,19.1s46.7,32,46.7,32s10.1-8.6,34.3-0.4
+	c10.3,3.6,17.1,10.9,21.2,18c7.3,12.8,8.4,28.3,3,41.8c-10.9,26.8-40.9,26.8-40.9,26.8H76.1C76.1,137.6,44.1,139.1,40.3,109.9z"/>
+<!--<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M80 120 L80 260"/>-->
+<!--<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M105 120 L105 260"/>-->
+<!--<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M130 120 L130 260"/>-->
+<!--<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M155 120 L155 260"/>-->
+<!--<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M180 120 L180 260"/>-->
+</svg>
